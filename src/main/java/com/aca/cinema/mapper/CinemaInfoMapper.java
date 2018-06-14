@@ -15,7 +15,7 @@ public class CinemaInfoMapper implements RowMapper<CinemaInfo> {
         cinemaInfo.setName(resultSet.getNString("name"));
         cinemaInfo.setAddress(resultSet.getNString("address"));
         cinemaInfo.setPhone(resultSet.getNString("phone"));
-        cinemaInfo.setSiteUrl(resultSet.getNString("siteUrl"));
+        cinemaInfo.setSiteUrl(resultSet.getNString("site_url"));
         cinemaInfo.setOpenClosed(resultSet.getNString("open_closed"));
 
         return cinemaInfo;

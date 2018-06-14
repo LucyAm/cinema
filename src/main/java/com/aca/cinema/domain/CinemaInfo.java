@@ -56,4 +56,16 @@ public class CinemaInfo {
     public void setOpenClosed(String openClosed) {
         this.openClosed = openClosed;
     }
+
+    @Override
+    public String toString() {
+        return "CinemaInfo{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", address='" + address + '\'' +
+                ", phone='" + phone + '\'' +
+                ", siteUrl='" + siteUrl + '\'' +
+                ", openClosed='" + openClosed + '\'' +
+                '}';
+    }
 }
