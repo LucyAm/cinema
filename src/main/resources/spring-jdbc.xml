@@ -19,4 +19,13 @@
         <property name="jdbcTemplate" ref="jdbcTemplate"/>
     </bean>
 
+    <bean id="movieService" class="com.aca.cinema.service.MovieService">
+        <property name="jdbcTemplate" ref="jdbcTemplate"/>
+    </bean>
+
+    <bean id="movieSessionService" class="com.aca.cinema.service.MovieSessionService">
+        <property name="jdbcTemplate" ref="jdbcTemplate"/>
+    </bean>
+
+
 </beans>

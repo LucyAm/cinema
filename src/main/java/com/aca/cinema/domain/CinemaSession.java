@@ -58,4 +58,16 @@ public class CinemaSession {
     public void setTicketPrice(Integer ticketPrice) {
         this.ticketPrice = ticketPrice;
     }
+
+    @Override
+    public String toString() {
+        return "CinemaSession{" +
+                "cinemaName='" + cinemaName + '\'' +
+                ", hall='" + hall + '\'' +
+                ", date=" + date +
+                ", language='" + language + '\'' +
+                ", dimension='" + dimension + '\'' +
+                ", ticketPrice=" + ticketPrice +
+                '}';
+    }
 }

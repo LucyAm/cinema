@@ -47,4 +47,15 @@ public class MovieHeader {
     public void setNowUpcoming(String nowUpcoming) {
         this.nowUpcoming = nowUpcoming;
     }
+
+    @Override
+    public String toString() {
+        return "MovieHeader{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", posterUrl='" + posterUrl + '\'' +
+                ", genre='" + genre + '\'' +
+                ", nowUpcoming='" + nowUpcoming + '\'' +
+                '}';
+    }
 }

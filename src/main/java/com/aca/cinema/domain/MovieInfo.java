@@ -101,4 +101,21 @@ public class MovieInfo {
     public void setTrailerUrl(String trailerUrl) {
         this.trailerUrl = trailerUrl;
     }
+
+    @Override
+    public String toString() {
+        return "MovieInfo{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", director='" + director + '\'' +
+                ", writers='" + writers + '\'' +
+                ", stars='" + stars + '\'' +
+                ", released='" + released + '\'' +
+                ", description='" + description + '\'' +
+                ", genre='" + genre + '\'' +
+                ", duration='" + duration + '\'' +
+                ", posterUrl='" + posterUrl + '\'' +
+                ", trailerUrl='" + trailerUrl + '\'' +
+                '}';
+    }
 }

@@ -58,4 +58,16 @@ public class MovieSession {
     public void setDate(Date date) {
         this.date = date;
     }
+
+    @Override
+    public String toString() {
+        return "MovieSession{" +
+                "id=" + id +
+                ", cinemaId=" + cinemaId +
+                ", cinemaName='" + cinemaName + '\'' +
+                ", ticketPrice=" + ticketPrice +
+                ", hall='" + hall + '\'' +
+                ", date=" + date +
+                '}';
+    }
 }
