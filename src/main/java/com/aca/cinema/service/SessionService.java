@@ -8,8 +8,8 @@ import org.springframework.jdbc.core.JdbcTemplate;
 
 import java.util.List;
 
-public class MovieSessionService {
-    JdbcTemplate jdbcTemplate;
+public class SessionService {
+    private JdbcTemplate jdbcTemplate;
 
     public JdbcTemplate getJdbcTemplate() {
         return jdbcTemplate;
@@ -21,16 +21,16 @@ public class MovieSessionService {
 
     public List<CinemaSession> getCinemaSessions(Long cinemaId){
         return jdbcTemplate.query("SELECT\n" +
-                " movies.name,\n" +
-                " sessions.hall,\n" +
-                " sessions.date,\n" +
-                " sessions.language,\n" +
-                " sessions.dimension,\n" +
-                " sessions.ticket_price\n" +
-                "FROM sessions\n" +
-                " INNER JOIN movies ON sessions.movie_id = movies.id\n" +
-                "WHERE sessions.cinema_id = ?  AND DATE_FORMAT(sessions.date, '%Y%m%d') = CURDATE()\n" +
-                "ORDER BY sessions.hall, sessions.date;",
+                        " movies.name,\n" +
+                        " sessions.hall,\n" +
+                        " sessions.date,\n" +
+                        " sessions.language,\n" +
+                        " sessions.dimension,\n" +
+                        " sessions.ticket_price\n" +
+                        "FROM sessions\n" +
+                        " INNER JOIN movies ON sessions.movie_id = movies.id\n" +
+                        "WHERE sessions.cinema_id = ?  AND DATE_FORMAT(sessions.date, '%Y%m%d') = CURDATE()\n" +
+                        "ORDER BY sessions.hall, sessions.date;",
                 new Object[]{cinemaId},
                 new CinemaSessionMapper());
     }

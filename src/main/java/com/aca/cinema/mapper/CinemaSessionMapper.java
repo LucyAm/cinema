@@ -10,7 +10,7 @@ public class CinemaSessionMapper implements RowMapper<CinemaSession> {
     @Override
     public CinemaSession mapRow(ResultSet resultSet, int i) throws SQLException {
         CinemaSession cinemaSession = new CinemaSession();
-        cinemaSession.setCinemaName(resultSet.getNString("name"));
+        cinemaSession.setMovieName(resultSet.getNString("name"));
         cinemaSession.setHall(resultSet.getNString("hall"));
         cinemaSession.setDate(resultSet.getDate("date"));
         cinemaSession.setLanguage(resultSet.getNString("language"));

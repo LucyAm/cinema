@@ -4,7 +4,7 @@ import java.util.Date;
 
 public class CinemaSession {
 
-    private String cinemaName;
+    private String movieName;
     private String hall;
     private Date date;
     private String language;
@@ -12,11 +12,11 @@ public class CinemaSession {
     private Integer ticketPrice;
 
     public String getCinemaName() {
-        return cinemaName;
+        return movieName;
     }
 
-    public void setCinemaName(String cinemaName) {
-        this.cinemaName = cinemaName;
+    public void setMovieName(String cinemaName) {
+        this.movieName = movieName;
     }
 
     public String getHall() {
@@ -62,7 +62,7 @@ public class CinemaSession {
     @Override
     public String toString() {
         return "CinemaSession{" +
-                "cinemaName='" + cinemaName + '\'' +
+                "movieName='" + movieName + '\'' +
                 ", hall='" + hall + '\'' +
                 ", date=" + date +
                 ", language='" + language + '\'' +

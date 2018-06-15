@@ -4,19 +4,19 @@ import java.util.Date;
 
 public class MovieSession {
 
-    private Long id;
+    private Long sessionId;
     private Long cinemaId;
     private String cinemaName;
     private Integer ticketPrice;
     private String hall;
     private Date date;
 
-    public Long getId() {
-        return id;
+    public Long getSessionId() {
+        return sessionId;
     }
 
-    public void setId(Long id) {
-        this.id = id;
+    public void setSessionId(Long id) {
+        this.sessionId = sessionId;
     }
 
     public Long getCinemaId() {
@@ -62,7 +62,7 @@ public class MovieSession {
     @Override
     public String toString() {
         return "MovieSession{" +
-                "id=" + id +
+                "sessionId=" + sessionId+
                 ", cinemaId=" + cinemaId +
                 ", cinemaName='" + cinemaName + '\'' +
                 ", ticketPrice=" + ticketPrice +
